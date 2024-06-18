@@ -1,0 +1,62 @@
+header {
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #febd59;
+  align-self: flex-end;
+}
+
+
+.line {
+  border-left: thin solid #e1a64e;
+  height: 25px;
+  margin-left: px;
+  margin-right: 4px;
+  display: inline-block;
+  margin-bottom: -7px;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.main-menu-card {
+  margin: 0px 10px;
+  background: #febd59;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px #fda315;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0;
+}
+
+
+.main-menu {
+  background-image: url("./images/parked_car.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+}
+
+@media (max-width: 470px) {
+  .main-menu {
+      background-position: center bottom; /* Center the image for small screens */
+      background-size: cover; /* Cover the container, adjusting the image */
+  }
+}
+
+.main-menu-card .header {
+  background: #dfdfdf;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
